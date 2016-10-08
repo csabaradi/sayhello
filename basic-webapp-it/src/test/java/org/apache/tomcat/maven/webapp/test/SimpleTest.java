@@ -21,30 +21,27 @@ package org.apache.tomcat.maven.webapp.test;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 import junit.framework.TestCase;
 
 public class SimpleTest extends TestCase {
 
-  @Test
-  public void testHelloWorld() throws InterruptedException {
-	  // Optional, if not specified, WebDriver will search your path for chromedriver.
-	  System.setProperty("webdriver.chrome.driver", "/home/csabi/.local/bin/chromedriver");
+	@Test
+	public void testHelloWorld() throws InterruptedException {
+		String serverUrl = System.getProperty("serverUrl");
+		assertNotNull(serverUrl, "serverUrl was not found");
 
-	  WebDriver driver = new ChromeDriver();
-	  driver.get("http://localhost:9898/");
-	  Thread.sleep(5000);  // Let the user actually see something!
-      WebElement who = driver.findElement(By.id("who"));
-      who.sendKeys("Hello World!");
-      WebElement send = driver.findElement(By.id("send-btn"));
-      send.click();
+		WebDriver driver = new ChromeDriver();
+		driver.get(serverUrl);
+		Thread.sleep(200);
 
-      
-	  Thread.sleep(5000);  // Let the user actually see something!
-	  WebElement response = driver.findElement(By.id("response"));
-	  assertEquals("Hello Hello World!", response.getText());
-	  driver.quit();
-  }
+		driver.findElement(By.id("who")).sendKeys("Hello World!");
+		driver.findElement(By.id("send-btn")).click();
+
+		Thread.sleep(200);
+
+		assertEquals("Unexpected response", driver.findElement(By.id("response")).getText(), "Hello Hello World!");
+		driver.quit();
+	}
 }

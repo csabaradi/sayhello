@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: org.apache.tomcat.maven.tomcat.api.impl.TestDefaultHelloService
--------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.724 sec

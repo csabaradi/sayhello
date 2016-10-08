@@ -1,5 +1,0 @@
-0:0:0:0:0:0:0:1 - - [08/Oct/2016:22:48:58 +0300] "GET / HTTP/1.1" 200 1802 http-bio-9898-exec-1 128
-0:0:0:0:0:0:0:1 - - [08/Oct/2016:22:48:58 +0300] "GET /css/bootstrap.min.1.4.0.css HTTP/1.1" 200 47646 http-bio-9898-exec-2 10
-0:0:0:0:0:0:0:1 - - [08/Oct/2016:22:48:58 +0300] "GET /js/jquery-1.7.js HTTP/1.1" 200 249159 http-bio-9898-exec-3 7
-0:0:0:0:0:0:0:1 - - [08/Oct/2016:22:48:58 +0300] "GET /favicon.ico HTTP/1.1" 404 988 http-bio-9898-exec-5 14
-0:0:0:0:0:0:0:1 - - [08/Oct/2016:22:49:04 +0300] "GET /restServices/testServices/HelloService/sayHello/Hello%20World! HTTP/1.1" 200 18 http-bio-9898-exec-6 243
