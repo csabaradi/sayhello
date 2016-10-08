@@ -1,0 +1,13 @@
+22:48:51,552 INFO  [org.openqa.selenium.server.SeleniumServer] Java: Oracle Corporation 25.91-b14
+22:48:51,554 INFO  [org.openqa.selenium.server.SeleniumServer] OS: Linux 4.4.0-38-generic amd64
+22:48:51,570 INFO  [org.openqa.selenium.server.SeleniumServer] v2.16.0, with Core v2.16.0. Built from revision 15381
+22:48:51,793 INFO  [org.openqa.selenium.server.SeleniumServer] RemoteWebDriver instances should connect to: http://127.0.0.1:4444/wd/hub
+22:48:51,796 INFO  [org.openqa.jetty.http.HttpServer] Version Jetty/5.1.x
+22:48:51,799 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server,/selenium-server]
+22:48:51,853 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.servlet.ServletHandler@282ba1e
+22:48:51,853 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/wd,/wd]
+22:48:51,853 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/selenium-server/driver,/selenium-server/driver]
+22:48:51,854 INFO  [org.openqa.jetty.util.Container] Started HttpContext[/,/]
+22:48:51,864 INFO  [org.openqa.jetty.http.SocketListener] Started SocketListener on 0.0.0.0:4444
+22:48:51,864 INFO  [org.openqa.jetty.util.Container] Started org.openqa.jetty.jetty.Server@7506e922
+22:48:52.810 INFO - Checking Resource aliases
