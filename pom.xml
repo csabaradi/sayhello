@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one
   or more contributor license agreements.  See the NOTICE file
@@ -46,6 +47,11 @@
           <artifactId>tomcat7-maven-plugin</artifactId>
           <version>2.0-beta-1</version>
         </plugin>
+		<plugin>
+		  <groupId>org.sonarsource.scanner.maven</groupId>
+		  <artifactId>sonar-maven-plugin</artifactId>
+		  <version>3.1.1</version>
+		</plugin>
       </plugins>
     </pluginManagement>
   </build>
@@ -187,4 +193,21 @@
     <module>basic-webapp-exec</module>
     <module>basic-webapp-it</module>
   </modules>
+  <scm>
+  	<url>https://github.com/csabaradi</url>
+  	<connection>git@github.com:csabaradi/sayhello.git</connection>
+  	<developerConnection>Csaba Radi</developerConnection>
+  	<tag>master</tag>
+  </scm>
+  <organization>
+  	<url>http://ertiein.eu</url>
+  	<name>haba</name>
+  </organization>
+  <name>haba</name>
+  <url>http://ertein.eu</url>
+  <description>Maven RESTful service template</description>
+  <issueManagement>
+  	<system>jira</system>
+  	<url>https://jira.haba.com</url>
+  </issueManagement>
 </project>

@@ -22,6 +22,8 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import junit.framework.TestCase;
 
@@ -34,14 +36,17 @@ public class SimpleTest extends TestCase {
 
 		WebDriver driver = new ChromeDriver();
 		driver.get(serverUrl);
-		Thread.sleep(200);
+//		driver.get("http://localhost:8080/");
+
+		WebDriverWait wait = new WebDriverWait(driver, 5 );
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("who"))));
 
 		driver.findElement(By.id("who")).sendKeys("Hello World!");
 		driver.findElement(By.id("send-btn")).click();
 
-		Thread.sleep(200);
+		wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.id("response"))));
 
-		assertEquals("Unexpected response", driver.findElement(By.id("response")).getText(), "Hello Hello World!");
+		assertEquals("Unexpected response", "Hello Hello World!", driver.findElement(By.id("response")).getText());
 		driver.quit();
 	}
 }

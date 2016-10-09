@@ -29,7 +29,11 @@ import org.springframework.stereotype.Service;
 public class DefaultHelloService
     implements HelloService
 {
-    public String sayHello( String who )
+	/**
+	 * Proper imlementation of the sayHello method
+	 */
+    @Override
+	public String sayHello( String who )
     {
         return "Hello " + who;
     }

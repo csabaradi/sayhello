@@ -28,9 +28,16 @@ import javax.ws.rs.core.MediaType;
 /**
  * HelloService!
  */
+@FunctionalInterface
 @Path( "HelloService" )
 public interface HelloService
 {
+	
+	/**
+	 * Rest implementation for building the response
+	 * @param who
+	 * @return
+	 */
     @Path( "sayHello/{who}" )
     @GET
     @Produces( { MediaType.TEXT_PLAIN } )

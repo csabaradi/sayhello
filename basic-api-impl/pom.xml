@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
 <!--
   Licensed to the Apache Software Foundation (ASF) under one
   or more contributor license agreements.  See the NOTICE file
@@ -28,7 +29,7 @@
 
   <artifactId>basic-api-impl</artifactId>
 
-  <name>test-api-impl</name>
+  <name>basic-api-impl</name>
 
   <dependencies>
     <dependency>
